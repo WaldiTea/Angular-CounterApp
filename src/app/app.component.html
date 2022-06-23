@@ -1,6 +1,12 @@
 <div class="container text-center">
   <h1 class="text-center my-3">{{ title }}</h1>
-  <button class="btn btn-success" (click)="increment()">+</button>
+  <button class="btn btn-success" (click)="incrementCounter()">+</button>
   <span class="h3 mx-3">{{ count }}</span>
-  <button class="btn btn-primary" (click)="decrement()">-</button>
+  <button class="btn btn-primary" (click)="decrementCounter()">-</button>
+  <button
+    class="btn btn-secondary d-block my-2 mx-auto"
+    (click)="resetCounter()"
+  >
+    Reset
+  </button>
 </div>
